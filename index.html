@@ -16,13 +16,18 @@
 
     <nav>
 
+        <div id="inicio"></div>
+        <div class="sup">
+            <img class="logo" src="./assets/img/LOGO_180.png" alt="">
+            <h1>Ikusi-Makusi</h1>
+        </div>
 
-        <div class="">
+        <div class="inf">
             <ul>
-                <li><a href="">Inicio</a></li>
-                <li><a href="">El estudio</a></li>
-                <li><a href="">Galería</a></li>
-                <li><a href="">Contacto</a></li>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#serv">Servicios</a></li>
+                <li><a href="#album">Album</a></li>
+                <li><a href="#contact">Contacto</a></li>
             </ul>
         </div>
     </nav>
@@ -48,10 +53,14 @@
 
 
     <main>
-        <section id="sectPresentacion">
+
+
+        <!--Servicios-->
+        <section>
+            <div id="serv"></div>
 
             <h2>Nuestros Servicios Fotográficos</h2>
-            <article>
+            <article class="anchoEstrecho">
                 <h3>TUS FOTÓGRAFOS EN DONOSTIA</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla temporibus sit excepturi esse porro saepe dolore voluptate molestias, molestiae, omnis iusto vitae ex nesciunt dicta quos consequatur expedita. Saepe, soluta?</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla temporibus sit excepturi esse porro saepe dolore voluptate molestias, molestiae, omnis iusto vitae ex nesciunt dicta quos consequatur expedita. Saepe, soluta?</p>
@@ -61,7 +70,8 @@
                 </div>
             </article>
 
-            <article>
+            
+            <article class="anchoEstrecho">
 
                 <h3>SOMOS UN EQUIPO DE FOTÓGRAFOS PROFESIONALES EN DONOSTIA</h3>
 
@@ -70,52 +80,84 @@
                 <div id="contenedorServicios">
 
                     <div class="servicio">
-                        <div class="contenedor_foto">
-                            <img class="i" src="assets/img/servicio_1_600.jpg" alt="">
-                            <h4>Título</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, voluptate!</p>
+                        <div class="contenedor_foto">                            
+                            <img src="assets/img/servicio_1_600.jpg" alt="">
                         </div>
+                        <h4>Título</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, voluptate!</p>
+                        
                     </div>
                     <div class="servicio">
                         <div class="contenedor_foto">
-                            <img class="i" src="assets/img/servicio_2_600.jpg" alt="">
-                            <h4>Título</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, voluptate!</p>
+                            <img  src="assets/img/servicio_2_600.jpg" alt="">
                         </div>
+                        <h4>Título</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, voluptate!</p>
                     </div>
                     <div class="servicio">
                         <div class="contenedor_foto">
-                            <img class="i" src="assets/img/servicio_3_600.jpg" alt="">
-                            <h4>Título</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, voluptate!</p>
+                            <img  src="assets/img/servicio_3_600.jpg" alt="">
                         </div>
+                            <h4>Título</h4>
+                       
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, voluptate!</p>
+                       
                     </div>
                     <div class="servicio">
                         <div class="contenedor_foto">
-                            <img class="i" src="assets/img/servicio_4_600.jpg" alt="">
-                            <h4>Título</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, voluptate!</p>
+                            <img  src="assets/img/servicio_4_600.jpg" alt="">
                         </div>
+                        <h4>Título</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, voluptate!</p>
+
                     </div>
                     <div class="servicio">
                         <div class="contenedor_foto">
-                            <img class="i" src="assets/img/servicio_5_600.jpg" alt="">
-                            <h4>Título</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, voluptate!</p>
+                            <img  src="assets/img/servicio_5_600.jpg" alt="">
                         </div>
+                        <h4>Título</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, voluptate!</p>
+
                     </div>
                     <div class="servicio">
                         <div class="contenedor_foto">
-                            <img class="i" src="assets/img/servicio_6_600.jpg" alt="">
-                            <h4>Título</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, voluptate!</p>
+                            <img  src="assets/img/servicio_6_600.jpg" alt="">
                         </div>
+                        <h4>Título</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, voluptate!</p>
+
                     </div>
                     
                 </div>
             </article>
 
         </section>
+
+        <!--Slider-->
+        <section>
+            <div id="album"></div>
+            <h2>Álbumes fotográficos a medida</h2>
+            <article>
+                <div id="slider">
+                   
+                    <img id="flechaIzd" class="icon" src="./assets/img/flecha_izd.png" alt="" >
+                    <img id="flechaIzd" class="icon" src="./assets/img/flecha_der.png" alt="" >                   
+                    <img id="fotoActiva" orden="1" src="./assets/img/slider1_2560.jpg" alt="" >
+                </div>
+                <h3 class="anchoEstrecho">
+                    El mejor álbum fotográfico para recordar los momentos más especiales.
+                </h3>
+
+                <p class="anchoEstrecho">Lorem, ipsum dolor sit amet consectetur adipisicing elit. <b> molestias praesentium quaerat odit</b> inventore impedit saepe sequi animi placeat aliquid veniam quis exercitationem est <b>facilis</b> consequuntur numquam, dolor veritatis omnis!</p>
+            </article>
+        </section>
+
+        <!--Equipo-->
+        <section>
+            <h2></h2>
+        </section>
+        
+
     </main>
 
     <footer>
