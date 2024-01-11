@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Slider</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="shortcut icon" href="./assets/img/ICONO_150.png" type="image/x-icon">
 
@@ -26,7 +26,7 @@
             <ul>
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#serv">Servicios</a></li>
-                <li><a href="#album">Album</a></li>
+                <li><a href="album.html">Album</a></li>
                 <li><a href="#contact">Contacto</a></li>
             </ul>
         </div>
@@ -56,14 +56,14 @@
 
 
         <!--Servicios-->
-        <section>
+        <section class="py-4">
             <div id="serv"></div>
 
             <h2>Nuestros Servicios Fotográficos</h2>
-            <article class="anchoEstrecho">
+            <article class="anchoEstrecho py-3">
                 <h3>TUS FOTÓGRAFOS EN DONOSTIA</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla temporibus sit excepturi esse porro saepe dolore voluptate molestias, molestiae, omnis iusto vitae ex nesciunt dicta quos consequatur expedita. Saepe, soluta?</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla temporibus sit excepturi esse porro saepe dolore voluptate molestias, molestiae, omnis iusto vitae ex nesciunt dicta quos consequatur expedita. Saepe, soluta?</p>
+                <p class="pb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla temporibus sit excepturi esse porro saepe dolore voluptate molestias, molestiae, omnis iusto vitae ex nesciunt dicta quos consequatur expedita. Saepe, soluta?</p>
 
                 <div class="boton">
                     Contactar
@@ -71,13 +71,13 @@
             </article>
 
             
-            <article class="anchoEstrecho">
+            <article class="anchoEstrecho py-3">
 
                 <h3>SOMOS UN EQUIPO DE FOTÓGRAFOS PROFESIONALES EN DONOSTIA</h3>
 
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla temporibus sit excepturi esse porro saepe dolore voluptate molestias, molestiae, omnis iusto vitae ex nesciunt dicta quos consequatur expedita. Saepe, soluta?</p>
+                <p class="pb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla temporibus sit excepturi esse porro saepe dolore voluptate molestias, molestiae, omnis iusto vitae ex nesciunt dicta quos consequatur expedita. Saepe, soluta?</p>
 
-                <div id="contenedorServicios">
+                <div id="contenedorServicios" class="py-3">
 
                     <div class="servicio">
                         <div class="contenedor_foto">                            
@@ -134,16 +134,18 @@
         </section>
 
         <!--Slider-->
-        <section>
+        <section class="py-4">
             <div id="album"></div>
             <h2>Álbumes fotográficos a medida</h2>
-            <article>
+            <article class="py-3">
                 <div id="slider">
                    
                     <img id="flechaIzd" class="icon" src="./assets/img/flecha_izd.png" alt="" >
-                    <img id="flechaIzd" class="icon" src="./assets/img/flecha_der.png" alt="" >                   
+                    <img id="flechaDch" class="icon" src="./assets/img/flecha_der.png" alt="" >                   
                     <img id="fotoActiva" orden="1" src="./assets/img/slider1_2560.jpg" alt="" >
+
                 </div>
+
                 <h3 class="anchoEstrecho">
                     El mejor álbum fotográfico para recordar los momentos más especiales.
                 </h3>
@@ -152,9 +154,19 @@
             </article>
         </section>
 
+
+ 
+
+
+
+
+
+
+
         <!--Equipo-->
-        <section>
-            <h2></h2>
+        <section class="py-4">
+            <h2>Nuestro Equipo</h2>
+            <p class="anchoEstrecho">Lorem, ipsum dolor sit amet consectetur adipisicing elit. <b> molestias praesentium quaerat odit</b> inventore impedit saepe sequi animi placeat aliquid veniam quis exercitationem est <b>facilis</b> consequuntur numquam, dolor veritatis omnis!</p>
         </section>
         
 
@@ -164,5 +176,9 @@
 
     </footer>
 
+
+
+
+    <script src="./assets/js/slider.js"></script>
 </body>
 </html>
