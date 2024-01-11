@@ -669,14 +669,18 @@ header .contenedor :nth-child(8){
      .form1{
         display: flex;
         flex-direction:column;
-        justify-content: flex-start;
+        justify-content: center;
         align-items: flex-start;
-        row-gap: 1rem;
+        row-gap: 0.5rem;
         width:500px;
         height: 400px;
         padding: 1rem;
         background-color: #cccccc;
         border-radius: 10px;
+     }
+
+     .form1 label{
+        margin-bottom: 0;
      }
 
      @media only screen and (max-width: 840px){
@@ -701,6 +705,12 @@ header .contenedor :nth-child(8){
         border-radius: 10px;
         border-color: white;
         padding: 0.5rem;
+
+     }
+
+     .form1 .boton:hover{
+        color: white;
+        background-color: #7e0303;
 
      }
 

@@ -172,7 +172,6 @@
 
         <!-- SECCION QUIENES SOMOS--------------------------------------------------------->
         <section >
-            <div id="hitoequipo"></div>
 
             <h2>Nuestro equipo de fotógrafos en Donostia</h2>
 
@@ -221,6 +220,7 @@
 
 
         <!-- NEWSLETTER----------------------------------------------------------------------------------------->
+        <div id="hitoequipo"></div>
 
         <section id="contenido_footer1">
             <h2>¡Contacta con nosotros!</h2>
@@ -228,19 +228,19 @@
                 <div class="cont_f1">
                     <form action="mailto:m.ansazafra@gmail.com" method="post" class="form1">
 
-                        <h4>Newsletter</h4>
+                        <label for="nombre">Nombre y Apellido:</label>
+                        <input type="text" id="cname" name="nombre" placeholder="..." requerid>
 
-                        <label for="cname">Nombre y Apellido:</label>
-                        <input type="text" id="cname" name="Nombre" placeholder="..." requerid>
+                        <label for="correo">Email:</label>
+                        <input type="email" id="cmail" name="correo"  maxlength="80" placeholder="..." requerid>
 
-                        <label for="cmail">Email:</label>
-                        <input type="email" id="cmail" name="mail" placeholder="..." requerid>
+                        <label for="telefono">Teléfono:</label>
+                        <input type="tel" id="ctel" name="telefono" maxlength="9" placeholder="..." requerid>
 
-
-                        <label for="cname">Tu consulta:</label>
-                        <textarea id="ctext" name="text"  requerid></textarea>
-
-                        <a href="#" class="btn-foo" type="submit">Enviar</a>
+                        <label for="mensaje">Tu consulta:</label>
+                        <textarea id="cmen" name="mensaje" requerid></textarea>
+                        
+                        <input type="submit" value="ENVIAR" class="boton" id="boton_enviar">
 
                     </form>
                 </div>

@@ -32,16 +32,14 @@ flechaIzd.addEventListener("click", function(){
     fotoActiva.src=`./assets/img/slider${ordenSiguiente}_2560.jpg` 
 
     fotoActiva.setAttribute("orden",ordenSiguiente) /* establecemos un nuevo valor al atributo */
-    fotoActiva.setAttribute("orden",ordenSiguiente)
 
 
-    clearInterval(intervalo);
-
+    /*cuando pulsamos en la flecha, quitamos el temporizador actual y creamos uno nuevo de otros 5seg */
     crearIntervalo(tiempoEspera);
 });
 
 
-
+        /*CLICK FLECHA DCHA */
 
 flechaDch.addEventListener("click", function(){
 
@@ -49,7 +47,7 @@ flechaDch.addEventListener("click", function(){
     ordenPrincipal = Number(ordenPrincipal);
 
     if(ordenPrincipal === numFotos){/*numFotos te da el número total de fotos que hay y hace que no cree números mayores que ese, dando fallo porque esas img no existen*/
-        ordenSiguiente=1
+        ordenSiguiente=1;
     }else{
         ordenSiguiente=ordenPrincipal+1
     }
@@ -59,8 +57,6 @@ flechaDch.addEventListener("click", function(){
 
     fotoActiva.setAttribute("orden",ordenSiguiente) /* establecemos un nuevo valor al atributo */
     
-    
-    clearInterval(intervalo);
 
     crearIntervalo(tiempoEspera);
 
@@ -69,36 +65,32 @@ flechaDch.addEventListener("click", function(){
 
 
 
-/*IMÁGEN RANDOM AL CARGAR LA WEB*/
-
-    let numAleatorio
-
-    /*definir que el valor sea un número aleatorio entre los numFotos(12 en éste caso)*/
-    numAleatorio=Number(numAleatorio)
-    numAleatorio=Math.random()*numFotos 
-    numAleatorio=Math.ceil(numAleatorio)
-    
-    console.log(numAleatorio)
-
-    fotoActiva.src=`./assets/img/slider${numAleatorio}_2560.jpg` 
-
-    fotoActiva.setAttribute("orden", numAleatorio)
-
 
 
 /*ZONA DE FUNCIONES (Código a reutilizar)*/
 
-    function funcion_random(){
-        numAleatorio=Number(numAleatorio);
-        numAleatorio=Math.random()*numFotos;
-        numAleatorio=Math.ceil(numAleatorio);    
-    
-        fotoActiva.src=`./assets/img/slider${numAleatorio}_2560.jpg`;    
-        fotoActiva.setAttribute("orden", numAleatorio);
-    }
+    /*IMÁGEN RANDOM AL CARGAR LA WEB*/
+    function random(){
+        let numAleatorio
+
+        /*definir que el valor sea un número aleatorio entre los numFotos(12 en éste caso)*/
+        numAleatorio=Number(numAleatorio)
+        numAleatorio=Math.random()*numFotos 
+        numAleatorio=Math.ceil(numAleatorio)
+        
+        console.log(numAleatorio)
+
+        fotoActiva.src=`./assets/img/slider${numAleatorio}_2560.jpg` 
+
+        fotoActiva.setAttribute("orden", numAleatorio)
+
+    };
 
     /*llamada a la funcion*/
-    funcion_random()
+    random()
+    
+
+
 
 
 
