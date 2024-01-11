@@ -3,7 +3,7 @@
 var numFotos=12;
 var ordenPrincipal, ordenSiguiente;
 var intervalo,temporizador;
-var tiempoEspera = 3000;
+var tiempoEspera = 5000;
 
 
 const flechaIzd = document.getElementById("flechaIzd");
@@ -37,7 +37,7 @@ flechaIzd.addEventListener("click", function(){
 
     clearInterval(intervalo);
 
-    crearIntervalo();
+    crearIntervalo(tiempoEspera);
 });
 
 
@@ -58,6 +58,11 @@ flechaDch.addEventListener("click", function(){
     fotoActiva.src=`./assets/img/slider${ordenSiguiente}_2560.jpg` 
 
     fotoActiva.setAttribute("orden",ordenSiguiente) /* establecemos un nuevo valor al atributo */
+    
+    
+    clearInterval(intervalo);
+
+    crearIntervalo(tiempoEspera);
 
 });
 
@@ -69,7 +74,7 @@ flechaDch.addEventListener("click", function(){
     let numAleatorio
 
     /*definir que el valor sea un número aleatorio entre los numFotos(12 en éste caso)*/
-     numAleatorio=Number(numAleatorio)
+    numAleatorio=Number(numAleatorio)
     numAleatorio=Math.random()*numFotos 
     numAleatorio=Math.ceil(numAleatorio)
     
@@ -99,8 +104,16 @@ flechaDch.addEventListener("click", function(){
 
     /* CAMBIO AUTOMÁTICO DE IMÁGENES CADA x SEGUNDOS */
 
-    function crearIntervalo(){
-        window.setInterval(funcion_random,3000);
-    }
+    crearIntervalo(tiempoEspera);
+    
+    function crearIntervalo(valorRecibido){
+        //en caso de que exista en la variable intervalo un setInterval anterior, lo borramos con clearInterval
 
-    crearIntervalo()
+        if(intervalo != undefined){
+            clearInterval(intervalo)
+        }
+
+        //creamos el intervalo en bucle donde ejecutará cada "valor de tiempo" la función random (que lo que hace es elegir un num random del 1 al 1o y mostrar la imagen en grande con dicho número)
+
+        intervalo = window.setInterval(random,valorRecibido)
+    }
