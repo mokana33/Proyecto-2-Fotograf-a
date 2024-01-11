@@ -11,27 +11,40 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600&family=Roboto+Serif:opsz,wght@8..144,300;8..144,500&family=Roboto:wght@100;400;900&display=swap" rel="stylesheet">
 </head>
+
+
+
+
+
 <body>
 
+    <!-- menu hamburguesa -->
+    <input type="checkbox" name="toggle" id="toggle">
+    <label for="toggle" class="contenedor_span">
+        <span></span>
+        <span></span>
+        <span></span>
 
-    <nav>
+    </label>
 
-        <div id="inicio"></div>
+
+    <!-- nav -->
+    <nav>   
         <div class="sup">
-            <img class="logo" src="./assets/img/LOGO_180.png" alt="">
-            <h1>Ikusi-Makusi</h1>
+             <img class="logo" src="./assets/img/LOGO_180.png" alt="">
+             <h1>Ikusi-Makusi</h1>
         </div>
 
-        <div class="inf">
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#serv">Servicios</a></li>
-                <li><a href="album.html">Album</a></li>
-                <li><a href="#contact">Contacto</a></li>
+         <div class="inf">
+             <ul>
+                  <li><a href="#inicio">Inicio</a></li>
+                  <li><a href="#serv">Servicios</a></li>
+                  <li><a href="album.html">Album</a></li>
+                  <li><a href="#contact">Contacto</a></li>
             </ul>
         </div>
     </nav>
-
+    <div id="inicio"></div>
 <!----------------------------------------------------------------------------------->
 
     <header>
@@ -48,7 +61,6 @@
         </div>
     </header>
 
-<!----------------------------------------------------------------------------------->
 <!----------------------------------------------------------------------------------->
 
 
@@ -155,30 +167,161 @@
         </section>
 
 
+
+
+
+        <!-- SECCION QUIENES SOMOS--------------------------------------------------------->
+        <section >
+            <div id="hitoequipo"></div>
+
+            <h2>Nuestro equipo de fotógrafos en Donostia</h2>
+
+            <article class="anchoEstrecho">
+
+                <h3>Nos centramos en el objetivo del cliente</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum necessitatibus placeat praesentium. Perspiciatis aut qui corrupti aspernatur voluptate dolor error. Atque perspiciatis esse officiis dolorem mollitia omnis unde non consectetur.</p>
+
+
+                <div id="contenedorequipo"> 
+                    <div class="persona">
+                        <div class="imagen">
+                            <img class=imagenobjetivo src="./assets/img/avatar_objetivo.jpg" alt="">
+                            <img src="./assets/img/avatar1_350.jpg" alt="">
+                        </div>
+                        <h4>Nombre persona</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo, suscipit officiis repudiandae tenetur dolor aperiam dolores modi reiciendis ad porro.</p>
+                    </div> 
+                    
+                    <div class="persona">
+                        <div class="imagen">
+                            <img class=imagenobjetivo src="./assets/img/avatar_objetivo.jpg" alt="">
+                            <img src="./assets/img/avatar2_350.jpg" alt="">
+                        </div>
+                        <h4>Nombre persona</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo, suscipit officiis repudiandae tenetur dolor aperiam dolores modi reiciendis ad porro.</p>
+                    </div> 
+
+                    <div class="persona">
+                        <div class="imagen">
+                            <img class=imagenobjetivo src="./assets/img/avatar_objetivo.jpg" alt="">
+                            <img src="./assets/img/avatar3_350.jpg" alt="">
+                        </div>
+                        <h4>Nombre persona</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo, suscipit officiis repudiandae tenetur dolor aperiam dolores modi reiciendis ad porro.</p>
+                    </div> 
+                </div>                
+            </article>
+
+
  
-
-
-
-
-
-
-
-        <!--Equipo-->
-        <section class="py-4">
-            <h2>Nuestro Equipo</h2>
-            <p class="anchoEstrecho">Lorem, ipsum dolor sit amet consectetur adipisicing elit. <b> molestias praesentium quaerat odit</b> inventore impedit saepe sequi animi placeat aliquid veniam quis exercitationem est <b>facilis</b> consequuntur numquam, dolor veritatis omnis!</p>
         </section>
+  
+
+
+
+
+        <!-- NEWSLETTER----------------------------------------------------------------------------------------->
+
+        <section id="contenido_footer1">
+            <h2>¡Contacta con nosotros!</h2>
+            <div class="cont_footer1">
+                <div class="cont_f1">
+                    <form action="mailto:m.ansazafra@gmail.com" method="post" class="form1">
+
+                        <h4>Newsletter</h4>
+
+                        <label for="cname">Nombre y Apellido:</label>
+                        <input type="text" id="cname" name="Nombre" placeholder="..." requerid>
+
+                        <label for="cmail">Email:</label>
+                        <input type="email" id="cmail" name="mail" placeholder="..." requerid>
+
+
+                        <label for="cname">Tu consulta:</label>
+                        <textarea id="ctext" name="text"  requerid></textarea>
+
+                        <a href="#" class="btn-foo" type="submit">Enviar</a>
+
+                    </form>
+                </div>
+
+                <div class="cont-f2">   
+
+                    <img src="./assets/img/servicio_6_600.jpg" alt="chico sacando foto con movil" tit="Servicio sesion de fotos">
+                    
+                </div>
+            </div>
+        </section>
+
         
 
     </main>
 
-    <footer>
+<!----------------------------------------------------------------------------------->
 
+    <footer class="bg-dark" >
+        <div id="contact"></div>
+
+        <div id="contenedor_footer">
+            
+            <img id="logo_footer" href="#inicio" src="./assets/img/LOGO_500.png" alt="logo">
+
+            <div>
+
+                <div class="info_footer">
+                    <h4>Mapa Web</h4>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#serv">Servicios</a></li>
+                        <li><a href="album.html">Album</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <div id="contacto" class="info_footer">
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li><a href=""><img src="./assets/img/telephone.svg" alt="tel"><p>943 34 25 67</p></a></li>
+                        <!--<li><a href=""><img src="./assets/img/whatsapp.svg" alt="whatsapp"><p>+34 676 76 76 70</p></a></li>-->
+                        <li><a href=""><img src="./assets/img/mail.svg" alt="mail"><p>web-k@yahoo.es</p></a></li>
+                        <li><a href=""><img src="./assets/img/placeholder.svg" alt="placeholder"><p>Antiguo - San Sebastián</p></a></li>
+                    </ul>
+                </div>
+
+                <div class="info_footer">
+                    <h4>Síguenos</h4>
+                    <div id="redes">
+                        <div class="redes_contenedor"><a href=""><img src="./assets/img/fb.svg" alt=""></a></div>
+                        <div class="redes_contenedor"><a href=""><img src="./assets/img/twit.svg" alt=""></a></div>
+                        <div class="redes_contenedor"><a href=""><img src="./assets/img/insta.svg" alt=""></a></div>               
+                    </div>
+ 
+                </div>
+    
+
+            </div>
+
+            <div id="legal">
+                <ul>
+                    <li><a href="#">Aviso Legal</a></li>
+                    <li><a href="#">Política de cookies</a></li>
+                </ul>
+                <p>Developed by web-k</p>
+                
+            </div>
+
+
+
+
+        </div>
     </footer>
 
 
 
 
     <script src="./assets/js/slider.js"></script>
+    <script src="./assets/js/avatar.js"></script>
+    <script src="./assets/js/menu.js"></script>
+
 </body>
 </html>

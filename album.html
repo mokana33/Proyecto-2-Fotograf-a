@@ -3,9 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
     <title>Document</title>
     <style>
-    *  /*GALLERY_2*/
+
+        .logo{
+            width: 80px;
+            height: auto;
+            position: absolute;
+            left: 20px;
+            top: 20px;
+            z-index: 120;
+        }
+
+        .sup{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: top;
+        }
+
+
+
+        .sup h1{
+            margin-bottom: 10px;
+        }
+
+        .inf{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center; 
+        }
+
+        nav{
+            position: fixed;
+            z-index: 100;
+        
+
+            min-height: 80px;
+        
+            width: 100%;
+            max-width: 2560px;
+
+            background-color: rgb(221, 221, 221);
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            column-gap: 10px;
+
+            text-decoration: none!important;
+            list-style-type: none;
+
+        }
+
+        nav ul li a{
+            text-decoration: none;
+            color: brown;
+        }
+
+        nav ul li a:hover{
+            font-weight: bold;
+            transition: 0.2s;
+        }
+
+    /*GALLERY_2*/
 
         .gallery{
             width: 90%;
@@ -41,32 +113,60 @@
 
 
 <body>
-    <section class="gallery">
 
-        <figure class="gallery_picture">
-            <img class="gallery_img" src="../Proyecto 2 Fotografía/assets/img/servicio_1_600.jpg" alt="aaa">
-        </figure>
 
-        <figure class="gallery_picture">
-            <img class="gallery_img" src="../Proyecto 2 Fotografía/assets/img/servicio_2_350.jpg" alt="aaa">
-        </figure>
 
-        <figure class="gallery_picture">
-            <img class="gallery_img" src="../Proyecto 2 Fotografía/assets/img/servicio_3_600.jpg" alt="aaa">
-        </figure>
+    <nav>
 
-        <figure class="gallery_picture">
-            <img class="gallery_img" src="../Proyecto 2 Fotografía/assets/img/servicio_4_350.jpg" alt="aaa">
-        </figure>
+        
+        <div class="sup">
+            <img class="logo" src="./assets/img/LOGO_180.png" alt="">
+            <h1>Ikusi-Makusi</h1>
+        </div>
 
-        <figure class="gallery_picture">
-            <img class="gallery_img" src="../Proyecto 2 Fotografía/assets/img/servicio_5_600.jpg" alt="aaa">
-        </figure>
+        <div class="inf">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#serv">Servicios</a></li>
+                <li><a href="album.html">Album</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div id="inicio"></div>
 
-        <figure class="gallery_picture">
-            <img class="gallery_img" src="../Proyecto 2 Fotografía/assets/img/servicio_6_350.jpg" alt="aaa">
-        </figure>
-    </section>
+    <main>
+        <section class="gallery">
+
+            <figure class="gallery_picture">
+                <img class="gallery_img" src="../Proyecto 2 Fotografía/assets/img/servicio_1_600.jpg" alt="aaa">
+            </figure>
+
+            <figure class="gallery_picture">
+                <img class="gallery_img" src="../Proyecto 2 Fotografía/assets/img/servicio_2_350.jpg" alt="aaa">
+            </figure>
+
+            <figure class="gallery_picture">
+                <img class="gallery_img" src="../Proyecto 2 Fotografía/assets/img/servicio_3_600.jpg" alt="aaa">
+            </figure>
+
+            <figure class="gallery_picture">
+                <img class="gallery_img" src="../Proyecto 2 Fotografía/assets/img/servicio_4_350.jpg" alt="aaa">
+            </figure>
+
+            <figure class="gallery_picture">
+                <img class="gallery_img" src="../Proyecto 2 Fotografía/assets/img/servicio_5_600.jpg" alt="aaa">
+            </figure>
+
+            <figure class="gallery_picture">
+                <img class="gallery_img" src="../Proyecto 2 Fotografía/assets/img/servicio_6_350.jpg" alt="aaa">
+            </figure>
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
 
 
 
